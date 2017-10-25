@@ -1,0 +1,1 @@
+A hash set is used to organize objects. Objects in the Hash Set is printed using an iterator.
