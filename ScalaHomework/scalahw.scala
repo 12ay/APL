@@ -6,7 +6,6 @@ object ScalaTutorial {
    
    val wordsFromFile = Source.fromFile("input.txt", "UTF-8")
    
-   //toArray or mkString turns it into an array of characters.. getLines are lines
    val wordIterator = wordsFromFile.mkString.split("[ .-]").toSeq.map(_.toLowerCase.trim)
    val wordCount = wordIterator.groupBy(identity).mapValues(_.size)
    
